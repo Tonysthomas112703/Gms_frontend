@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height */
+  background: rgb(114, 207, 210); /* Calming gradient */
+  padding: 20px;
+  
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #2c3e50; /* Darker blue for a strong, confident title */
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px; /* Clean, spaced-out typography */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.border {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.border:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700; /* Bold labels for clarity */
+  color: #34495e; /* Darker, readable label color */
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 6px;
+  background-color: #f7f7f7; /* Soft, neutral background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db; /* Calming blue focus color */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Glow effect on focus */
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth interactions */
+}
+
+.btn-primary {
+  background-color: #96afa9ed; /* Reassuring blue-green background */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0c2b2c; /* Darker, stronger shade on hover */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem; /* Adjust title for smaller screens */
+  }
+
+  .border {
+    padding: 25px; /* Adjust padding on smaller screens */
+  }
+}
