@@ -1,6 +1,6 @@
 // src/components/RegisterUser.jsx
 import React, { useState } from "react";
-import './Styles/RegisterUser.module.css'
+import "./Styles/RegisterUser.module.css";
 
 const RegisterUser = () => {
   const [formData, setFormData] = useState({

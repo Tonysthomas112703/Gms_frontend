@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext'; // Assuming you have an AuthContext
 import { useNavigate } from 'react-router-dom';
-import './Styles/TechnicianDashboard.module.css';
+import styles from "./Styles/TechnicianDashboard.module.css";
+
 
 const TechnicianDashboard = () => {
   const { authDetails } = useContext(AuthContext); // Access authDetails from context
@@ -71,7 +72,6 @@ const TechnicianDashboard = () => {
     }
   
     try {
-      // Make sure to send the correct endpoint for technician status update
       const response = await fetch(`http://localhost:8080/grievance/update-technician-status?technicianId=${technicianId}&status=${technicianStatus}`, {
         method: 'PATCH',
         headers: {
@@ -104,22 +104,22 @@ const TechnicianDashboard = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="title">Technician Dashboard</h2>
-      {message && <p className="alert">{message}</p>}
+    <div className={styles.container}>
+      <h2 className={styles.title}>Technician Dashboard</h2>
+      {message && <p className={styles.alert}>{message}</p>}
 
       {!hasEnteredId ? (
-        <form onSubmit={handleTechnicianIdSubmit} className="form">
-          <label htmlFor="technicianId" className="label">Enter Technician ID:</label>
+        <form onSubmit={handleTechnicianIdSubmit} className={styles.form}>
+          <label htmlFor="technicianId" className={styles.label}>Enter Technician ID:</label>
           <input
             type="text"
             id="technicianId"
             value={technicianId}
             onChange={(e) => setTechnicianId(e.target.value)}
-            className="input"
+            className={styles.input}
             required
           />
-          <button type="submit" className="submitButton">Submit</button>
+          <button type="submit" className={styles.submitButton}>Submit</button>
         </form>
       ) : (
         <>
@@ -143,13 +143,12 @@ const TechnicianDashboard = () => {
                   <div>
                     <strong>Username:</strong> {grievance.username}
                   </div>
-                  {/* Add other grievance fields as needed */}
                   <select
                     value={selectedStatus}
                     onChange={(e) => {
                       setSelectedStatus(e.target.value); // Update selected status
                     }}
-                    className="select"
+                    className={styles.select}
                     required
                   >
                     <option value="">Select Status</option>
@@ -158,7 +157,7 @@ const TechnicianDashboard = () => {
                     <option value="CLOSED">Closed</option>
                   </select>
                   <button 
-                    className="submitButton ms-2" 
+                    className={`${styles.submitButton} ${styles.marginLeft}`} 
                     onClick={() => {
                       handleUpdateGrievanceStatus(grievance.grievanceId); // Update with grievance ID
                       setSelectedStatus(grievance.status); // Automatically select current status
@@ -177,14 +176,14 @@ const TechnicianDashboard = () => {
           <select
             value={technicianStatus}
             onChange={(e) => setTechnicianStatus(e.target.value)}
-            className="select"
+            className={styles.select}
             required
           >
             <option value="">Select Status</option>
             <option value="Available">Available</option>
             <option value="Unavailable">Unavailable</option>
           </select>
-          <button className="submitButton ms-2" onClick={handleTechnicianStatusUpdate}>
+          <button className={styles.submitButton} onClick={handleTechnicianStatusUpdate}>
             Update Technician Status
           </button>
         </>
@@ -194,3 +193,4 @@ const TechnicianDashboard = () => {
 };
 
 export default TechnicianDashboard;
+

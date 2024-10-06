@@ -1,7 +1,7 @@
 // src/components/UserDashboard.jsx
 import React, { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext'; 
-import './Styles/Userdashboard.css'
+import './Styles/Userdashboard.css';
 
 
 const UserDashboard = () => {

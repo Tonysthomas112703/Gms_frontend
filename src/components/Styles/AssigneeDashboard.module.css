@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Full height */
-    background: linear-gradient(135deg, #e2f0e9, #c1e3d3); /* Soft light green gradient background */
+    background: linear-gradient(135deg, #8db5aced, #9ed6caed); /* Soft light green gradient background */
     padding: 30px; /* Increased padding for better spacing */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -15,7 +15,7 @@
 .title {
     font-size: 2.5rem; /* Increased font size for title */
     margin-bottom: 20px;
-    color: #1b3a2b; /* Darker green text for title */
+    color: #22695aed; /* Darker green text for title */
     font-weight: bold;
     text-align: center; /* Center title */
     letter-spacing: 1px; /* Slight letter spacing for elegance */
@@ -52,7 +52,7 @@
 }
 
 .table th {
-    background-color: #4cafa3; /* Soft green background for headers */
+    background-color: #1c8579; /* Soft green background for headers */
     color: white; /* White text for headers */
 }
 
@@ -73,7 +73,7 @@
 }
 
 .selectButton {
-    background-color: #4cafa3; /* Standard green for select button */
+    background-color: #1c8579; /* Standard green for select button */
     color: white; /* White text */
 }
 
@@ -91,13 +91,13 @@
 }
 
 .toggleButton {
-    background-color: #6c757d; /* Gray for toggle button */
+    background-color: #4cafa3; /* Gray for toggle button */
     color: white; /* White text */
     margin: 10px 0; /* Margin for separation */
 }
 
 .toggleButton:hover {
-    background-color: #2f373d; /* Darker gray on hover */
+    background-color: #0d3b36; /* Darker gray on hover */
 }
 
 .card {

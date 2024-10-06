@@ -4,15 +4,16 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Full height */
-  background: rgb(114, 207, 210); /* Calming gradient */
+  background: linear-gradient(135deg, #8db5aced, #9ed6caed); /* Emerald green gradient */
   padding: 20px;
-  
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  color: #2c3e50; /* Darker blue for a strong, confident title */
+  color: #0e4a3ded; /* Darker emerald green for the title */
   font-weight: bold;
   text-align: center;
   letter-spacing: 1px; /* Clean, spaced-out typography */
@@ -42,7 +43,7 @@ label {
   display: block;
   margin-bottom: 8px;
   font-weight: 700; /* Bold labels for clarity */
-  color: #34495e; /* Darker, readable label color */
+  color: #0b4538ed; /* Dark emerald green for readable label color */
 }
 
 .form-control {
@@ -55,8 +56,8 @@ label {
 }
 
 .form-control:focus {
-  border-color: #3498db; /* Calming blue focus color */
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Glow effect on focus */
+  border-color: #2fb0a1; /* Lighter emerald green focus color */
+  box-shadow: 0 0 8px rgba(102, 187, 106, 0.3); /* Glow effect on focus */
   outline: none;
 }
 
@@ -71,12 +72,12 @@ label {
 }
 
 .btn-primary {
-  background-color: #96afa9ed; /* Reassuring blue-green background */
+  background-color: #12b491ed; /* Lighter emerald green background */
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0c2b2c; /* Darker, stronger shade on hover */
+  background-color: #0c2b2c; /* Darker emerald green shade on hover */
   transform: scale(1.05); /* Slight zoom */
 }
 
@@ -90,6 +91,18 @@ label {
 
 .mt-5 {
   margin-top: 3rem;
+}
+
+.alert {
+  margin-top: 20px;
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fce4e4; /* Light red background for alerts */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e74c3c;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.1);
 }
 
 @media (max-width: 768px) {

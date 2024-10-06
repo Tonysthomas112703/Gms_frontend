@@ -4,14 +4,14 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 30px;
-    background: linear-gradient(135deg, #96afa9ed, #f9f9f9); /* Gradient for a soft, elegant look */
+    background: linear-gradient(135deg, #8db5aced, #9ed6caed); /* Gradient for a soft, elegant look */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h2 {
     font-size: 2.5em;
-    color: #2c3e50; /* Darker blue for a strong, confident title */
+    color: #0e4a3ded; /* Darker blue for a strong, confident title */
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px; /* Enhance typography */
@@ -53,7 +53,7 @@ label {
 }
 
 .btn {
-    background-color: #96afa9ed; /* Soft blue-green for consistency with other pages */
+    background-color: #379b84ed; /* Soft blue-green for consistency with other pages */
     border: none;
     color: white;
     padding: 12px 20px;
