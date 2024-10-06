@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1ab792; /* Light gray background */
+    background-color: #50756d; /* Light gray background */
     color: #333;
   }
   
@@ -26,7 +26,7 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #3d9a97;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
   
@@ -67,7 +67,7 @@ body {
   .features-section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #96afa9ed;
+    color: #42a991ed;
   }
   
   .features-grid {
@@ -98,7 +98,7 @@ body {
   /* Footer */
   .footer {
     padding: 20px;
-    background-color: #96afa9ed;
+    background-color: #2e453fed;
     color: white;
     text-align: center;
     position: relative;
