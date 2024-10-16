@@ -1,10 +1,10 @@
 /* Container */
 
-.container {
-  max-width: 1100px; /* Adjusted width for consistency */
+.container  {
+  max-width: 1300px; /* Adjusted width for consistency */
   margin: auto; /* Centering the container properly */
   padding: 60px; /* Space around the content */
-  background: linear-gradient(135deg, #8db5ac, #9ed6ca); /* Smooth emerald green gradient */
+  background: linear-gradient(135deg,  #154038ed,#9ed6caed); /* Smooth emerald green gradient */
   border-radius: 20px; /* Rounded corners */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for elevation */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition effects */
@@ -21,12 +21,16 @@
   font-size: 2.5rem; /* Title size */
   margin-bottom: 40px; /* Space below the title */
   text-align: center; /* Centering the text */
-  color: #0e4a3ded; /* Title color */
+  color: #ffffffed; /* Title color */
   font-weight: 700; /* Bold font */
 }
 
 /* Form Styles */
 .form {
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  
   margin-bottom: 10px; /* Space below the form */
 }
 
@@ -35,7 +39,7 @@
   display: block; /* Block display */
   margin-bottom: 12px; /* Space below label */
   font-weight: 600; /* Bold font */
-  color: #ffffff; /* Label color */
+  color: #f8fffd; /* Label color */
   font-size: 1.2rem; /* Font size */
 }
 
@@ -84,11 +88,12 @@
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Slight glow on focus */
 }
 
+
 /* Styles for the buttons */
 .submitButton {
   padding: 12px 20px; /* Add padding to the button */
   font-size: 16px; /* Increase font size */
-  background-color: #3db3a9; /* Green background */
+  background-color: #19a095; /* Green background */
   color: white; /* White text */
   border: none; /* Remove border */
   border-radius: 8px; /* Round the button corners */
@@ -110,7 +115,7 @@
 
 /* Button Styles */
 .submitButton {
-  background-color: #2a7d59; /* Emerald button */
+  background-color: #0d412b; /* Emerald button */
   color: white; /* White text */
   border: none; /* No border */
   padding: 15px 40px; /* Spacious button */
@@ -126,26 +131,55 @@
   transform: translateY(-4px); /* Lift effect */
 }
 
+.grievances {
+  
+  border: 2px solid #128e7900; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #70af95; /* Light background color */
+  padding: 10px; /* Padding inside the div */
+  margin-bottom: 20px; /* Space below each grievance block */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+.grievanceItem {
+  margin-bottom: 10px; /* Space below each grievance item */
+  font-size: 18px; /* Increase font size for better readability */
+  color: #121212; /* Darker text color */
+}
+
+.grievanceItem strong {
+  color: #084e39; /* Custom color for strong text */
+  margin-right: 5px; /* Space between label and value */
+}
+
+
 /* Technician ID Input Box */
-#technician-id {
+#technicianId {
   width: 100%; /* Full width */
   padding: 24px; /* Spacious input */
   border: 2px solid #e0f2e0; /* Light border */
   border-radius: 16px; /* Rounded corners */
   font-size: 1.3rem; /* Font size */
-  background-color: #effbf1; /* Light greenish background */
+  background-color: #45d1aa; /* Light greenish background */
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.navLogo {
+  width: 210px; /* Set the width of the logo */
+  height: 250; /* Maintain aspect ratio */
+  margin-right: auto; /* Push the rest of the items to the right */
+  
 }
 
 /* Focus state for Technician ID */
-#technician-id:focus {
+#technicianId:focus {
   border-color: #66bb6a; /* Green border on focus */
   box-shadow: 0 0 10px rgba(102, 187, 106, 0.5); /* Focus shadow */
   outline: none; /* Remove default outline */
 }
 
 /* Hover state for Technician ID */
-#technician-id:hover {
+#technicianId:hover {
   border-color: #b2e0b2; /* Hover border color */
   background-color: #d6f9e3; /* Light hover background */
 }
@@ -172,17 +206,6 @@ li:hover {
 }
 
 /* Grievance details font styles */
-li div {
-  font-family: 'Arial', sans-serif; /* Change to your desired font */
-  font-size: 1.2em; /* Increase font size */
-  color: #333; /* Change text color */
-}
-
-/* Specific styles for strong elements */
-li div strong {
-  font-weight: bold; /* Make strong elements bold */
-  color: #2c3e50; /* Change color of strong text */
-}
 
 
 /* Responsive Design */
@@ -201,4 +224,24 @@ li div strong {
     font-size: 1rem; /* Smaller font size */
     padding: 15px; /* Less padding */
   }
+  .head{
+    color: #084e39;
+  }
+
+
+  /* TechnicianDashboard.module.css */
+
+.alert {
+  color: rgb(252, 3, 3); /* Change to the desired color */
+  font-size: 1.2rem; /* Adjust the font size */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Additional styles if needed */
+
+.heading{
+  color: #021b13;
+}
+  
 }
